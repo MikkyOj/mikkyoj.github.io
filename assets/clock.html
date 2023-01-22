@@ -1,0 +1,30 @@
+<div class="clock">
+
+   <span class="d">12</span><span class="e">6</span><span class="f">3</span><span class="g">9</span>
+    <div class="dot">
+        <div class="hand a"></div>
+       <div class="hand b"></div> 
+       <div class="hand c"></div>
+
+    </div>
+    
+</div>
+
+
+<style>
+*{ margin: 0; padding: 0;}
+body{ height: 100vh; display: flex; justify-content: center; align-items: center; background: #f7dab5;}
+.clock{ aspect-ratio: 1; width: 450px; border-radius: 50%; background-image: radial-gradient(#ddd, #7777, #f7dad2); box-shadow:0 0 0 2px purple, 0 0 0 30px #6af1d6, 0 0 0 35px purple ; display: flex; justify-content: center; align-items: center; position: relative;}
+
+.dot{aspect-ratio: 1; width: 30px; border-radius: 50%; background: #333; display: flex; justify-content: center; align-items: center; position: relative; }
+.hand{ position: absolute; width:  5px; height: 170px; border-radius: 100vw; background: #111; bottom: 0;}
+.b{ height: 130px; bottom: -50px; right: -40px; transform: rotate(90deg);}
+.c{ height: 230px; transform: rotate(45deg); top: -50px; left: -37px;}
+
+span{ color: blue; font-size: 40px; position: absolute; z-index: 50; font-family: cursive; text-shadow: 0 1px 2px black}
+.d{top: 0; font-weight: 900;}
+.e{ bottom: 0; font-weight: 900;}
+.f{ right: 5px;}
+.g{ left: 5px;}
+
+

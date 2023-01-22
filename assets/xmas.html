@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      
+
+        body{
+            background: #dd6b4d;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        section{
+            position: relative;
+            width: 200px;
+            height: 100px;
+        }
+        div{
+            position: absolute;
+            aspect-ratio: 1;
+            width: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid transparent;
+        }
+        .one{
+            top: -15px;
+            left: 15%;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid rgba(0, 255, 150);
+            z-index: 100;
+        }
+        .two{
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid rgba(0, 255, 100);
+            z-index: 30;
+            left: -10px;
+        }
+        .three{
+            top: 10px;
+            left: -15%;
+            border-left: 120px solid transparent;
+            border-right: 120px solid transparent;
+            border-bottom: 120px solid rgba(0, 255, 80);
+        }
+        .four{
+            top: 90px;
+            left: 37%;
+            z-index: -1;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 120px solid #777;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        
+    </section>
+</body>
+</html>
+
+<!--nav>
+    <img src="" alt="menu" onclick="openmenu()">
+    <ul id="menu">
+        <img src="" alt="cm"  onclick="closemenu()">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    var menu = document.getElementById("menu");
+    function openmenu() {
+        menu.style.transform = "translateX(0)";
+    }
+    function closemenu() {
+        menu.style.transform = "translateX(-120%)";
+    }
+</script>
+ /* nav{
+          padding: 20px 25px;  
+        }
+        img{
+            cursor: pointer;
+        }
+        ul img{
+            padding: 5px;
+            background: #7777;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul{
+            position: relative;
+          
+            
+            transform: translateX(-120%);
+            border-radius: 15px;
+            padding: 20px 0;
+            margin-top: 15px;
+            background-color: #7775;
+            width: 150px;
+            box-shadow: 0 0 4px #3198;
+            transition: 1s ease-out;
+        }
+        li{
+            text-align: center;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        li a{
+            text-decoration: none;
+            color: #111;
+        }*/

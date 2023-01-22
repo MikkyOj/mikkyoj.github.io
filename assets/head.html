@@ -1,0 +1,49 @@
+<section>
+    <div></div>
+</section>
+
+
+
+
+<style>
+    body{
+        background-color: #999;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 200px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    div{
+        height: 190px;
+        width: 140px;
+        background: #999;
+        box-shadow: 0 0 0 20px rebeccapurple;
+        border-radius: 100vw;
+        margin-top: 30%;
+        position: relative;
+    }
+    div::before, div::after{
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 40px;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        background: rebeccapurple;
+        top: 63%;
+        left: -20px;
+    }
+    div::after{
+        left: 89%;
+    }
+</style>

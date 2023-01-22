@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner:wght@500&family=Libre+Franklin:wght@100&family=Lobster&family=Mochiy+Pop+One&family=Monda&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div id="header"> <!--paralax scrolling-->
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="images/cancel.png" alt="menu" class="menu" onclick="closemenu()">
+                </ul>
+                <img src="images/menu (1).png" alt="menu" class="main" onclick="openmenu()">
+            </nav>
+
+            <div class="header-text">
+                <p class="p">Fontend Developer</p>
+                <h2 class="anim">Hello, I am <span class="inner-text">
+                        <span class="inner-text-anim">M</span><span class="inner-text-anim">i</span><span
+                            class="inner-text-anim">c</span><span class="inner-text-anim">h</span><span
+                            class="inner-text-anim">a</span><span class="inner-text-anim">e</span><span
+                            class="inner-text-anim">l</span><span class="inner-text-anim">--</span><span
+                            class="inner-text-anim">O</span><span class="inner-text-anim">j</span>
+                    </span><br> I use codes to solve problems...</h2>
+            </div>
+        </div>
+    </div>
+    <!--About me section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-right" class="about-col-1" data-aos-duration="900" data-aos-once="true">
+                    <img src="images/me.png" alt="Michael">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="abt">About Me</h1>
+                    <p>My name is Ojebola Michael. I am a full time programmer and I cultivate my skills into being very
+                        productive, by using codes to solve complex problems and design awesome looking websites...
+                        <br>I am ethusiastic about learning new things everyday as I strongly believe in the saying "We
+                        Learn till We die!!".
+                    </p>
+
+                    <div class="tab-tittles"><!--Creating a side menu for the skiils et all-->
+                        <h2 class="tab-links active" onclick="opentabs('skills')">Skills</h2>
+                        <!--Using the opentabs function with onclick attribute to define the action of penning each section-->
+                        <h2 class="tab-links" onclick="opentabs('exp')">Experience</h2>
+                        <h2 class="tab-links" onclick="opentabs('edu')">Education</h2>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><!--The active tab each of the website-->
+                        <ul>
+                            <li><span>UI/UX</span>
+                                <br>Designing Web Interfaces
+                            </li>
+                            <li><span>Frontend Development</span>
+                                <br>HTML, CSS, JavaScripts and React JS.
+                            </li>
+                            <li><span>Backend Development</span>
+                                <br>MySQLI, Java, PHP, Python
+                            </li>
+                            <li><span>Graphics Designing</span>
+                                <br>Logos, Banners, Flyers and Video Creation
+                            </li>
+                            <li><span>Programming Languages</span>
+                                <br>Java, Python, C++, Go-Lang, Rust..
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>2021 - Current</span>
+                                <br>Computer Science Student at SAF POLYTECHNIC
+                            </li>
+                            <li><span>2020 - 2022</span>
+                                <br>Programmer at DAWAH TECH
+                            </li>
+                            <li><span>2015 - 2018</span>
+                                <br>Junior programmer at LASSMOCK, Lagos State
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2015</span>
+                                <br>Lagos State Model Junior College, Kankon.
+                            </li>
+                            <li><span>2018</span>
+                                <br>Lagos State Senior Model College, Kankon.
+                            </li>
+                            <li><span>2020</span>
+                                <br>Dawah-Tech Computer Institute
+                            </li>
+                            <li><span>2020 - Current</span>
+                                <br>National Diploma, SAF POLYTECHNIC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Services section-->
+    <div id="services">
+        <div class="container">
+            <h1 class="abt">My Services</h1>
+
+            <div class="services-list">
+                <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="70" data-aos-once="true">
+                    <h2>Web Designs</h2>
+                    <p>I am readily avaliable to serve your interest at all times. I create awesome looking website for
+                        individuals and organisations, schools and religious faction.</p>
+                    <a>Learn More...</a>
+                </div>
+                <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="70" data-aos-once="true">
+                    <h2>Mentoring and Tutorials</h2>
+                    <p>To positicely influence the world, I start by affecting the lives of younger and older people
+                        alike by tutoring them in web development, Programming Languages and over mentorship accross all
+                        boards</p>
+                    <a>Learn More...</a>
+                </div>
+                <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="70" data-aos-once="true">
+                    <h2>UI/ UX Designs</h2>
+                    <p>To attract more customers to your business and improve the users' Experience of people using your
+                        products, I am the man for the Job. Expert in improving the Users Interfaces and Experience as a
+                        whole</p>
+                    <a>Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--My work section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="abt">My Work</h1>
+
+            <div class="work-list">
+                <div class="work" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
+                    <img src="images/sun.jpg" alt="my work">
+                    <div class="layer">
+                        <h3>Graphics with Codes</h3>
+                        <p>This is a form of recreation where I showcase my css skills and create awesome objects with
+                            code</p>
+                        <a href="graphic-code.html">See More</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
+                    <img src="images/work.jpg" alt="my work">
+                    <div class="layer">
+                        <h3>E-Counselling App</h3>
+                        <p>This website utilizes multiple web skills as well as API and DOM implementations. </p>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+                <div class="work" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">
+                    <img src="images/work 2.jpg" alt="my work">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                        <p>This is a section of for students registration as well as sign-up with cool user friendly
+                            interfaces</p>
+                        <a href="http://www.safpolycomputerscience.com">See More</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="graphic-code.html" class="btn">Explore..</a>
+        </div>
+    </div>
+
+    <!---Contact section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="abt">Contact Me</h1>
+                    <p>ojebola.michael00@gmail.com</p>
+                    <p>09061810124, 09039444734</p>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://linkedin.com/in/michael-ojebola" class="fa fa-linkedin" class="icon"></a></li>
+                            <li><a href="https://twitter.com/ojebzy04" class="fa fa-twitter" class="icon"></a></li>
+                            <li><a href="mailto:ojebola.michael00@gmail.com" class="fa fa-envelope" class="icon"></a></li>
+                        </ul>
+                    </div>
+                    <a href="pre project.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" action="https://formspree.io/f/mkneopbb">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="number" id="number" name="number" placeholder="Your Phone Number" required>
+                        <textarea name="message" id="message" rows="7" placeholder="Your Message" required></textarea>
+                        <button type="submit" name="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;: Michael Oj... 2022</p>
+    </div>
+
+    <script>
+        // to open the tab sections of the about
+        var tablinks = document.getElementsByClassName("tab-links");// to assign the tab links 
+        var tabContents = document.getElementsByClassName("tab-contents");// to assign the tab contents
+        // defining the function opentabs
+        function opentabs(tabname) {
+            for (tablink of tablinks) { // to iterate througt the tablinks
+                tablink.classList.remove("active") // removing the active line from each tab
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active"); // assigning the active line to each tab
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <!--script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+     <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "ojebola.michael00@gmail.com",
+                Password : "Adeseun123",
+                To : 'ojebola.michael00@gmail.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+      }
+  </script-->
+
+    <script>
+        // to open the menu bars
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "-35px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

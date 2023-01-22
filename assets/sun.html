@@ -1,0 +1,67 @@
+<div class="bg">
+   <div class="sun"></div>
+    <div class="shadow one"></div>
+    <div class="shadow two"></div>
+</div>
+
+<div class="bell-body">
+       <div class="bell"></div>
+       <div class="ball up"></div>
+       <div class="ball down"></div>
+</div>
+
+<div class="orange">
+         <div class="orn">
+              <div class="inner"><div class="in"></div></div>
+               <div class="liner f"></div>
+                <div class="liner b"></div>
+                  <div class="liner g"></div>
+                <div class="liner d"></div>
+                <div class="diag"></div>
+                <div class="die"></div>
+          </div>
+
+    <div class="line a"></div>
+    <div class="line b"></div>
+     <div class="line c"></div>
+    <div class="line d"></div>
+     <div class="dia"></div>
+    <div class="dia di"></div>
+ </div>
+>
+<style>
+*{ margin:0; padding:0;}
+body{background:#333; display: flex; justify-content: center; align-items: center; height: 100vh width: 100vw;}
+.bg{ width: 250px; height: 350px; background: #f2ad41; border-radius: 100vw 100vw 100px 100px; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden;}
+.sun{ aspect-ratio: 1; width: 100px; background: #fff54f; border-radius: 50%; margin-top: 50px;}
+.shadow{ position: absolute;  aspect-ratio: 1; width: 400px; border-radius: 50%; background: #824824; bottom: -60%;}
+.one{ background: #e08027; left: -98%} 
+.two{ left: 20%}
+
+
+.bell-body{ display: flex; justify-content: center; align-items: center; position: relative; margin-left: 50px;}
+.bell{ width: 200px; height: 250px; background-image: linear-gradient(#333, #888); border-radius: 100vw 100vw 120px 120px;}
+.ball{ position: absolute; aspect-ratio: 1; width: 70px; border-radius: 50px; z-index: -1;}
+.up{top: -30px; background: #e08022}
+.down{bottom: -35px; background: #dddd;}
+
+
+.orange{ display: flex; justify-content: center; align-items: center; position: relative; aspect-ratio: 1; width: 350px; border-radius: 50%; margin-left: 50px; background: orange; box-shadow: 0 0 0 20px #f3f3f3, 0 0 0 25px orange;}
+.orn{ aspect-ratio: 1; width: 80px; background: #f3f3f3; position: relative; border-radius: 50%; display: flex; justify-content: center; align-items: center;}
+.line{ height: 20px; width: 190px; border-radius: 30px; background: #f3f3f3; position: absolute;}
+.a{ left: -10px;}
+.b{transform: rotate(90deg); top: 65px;}
+.c{right: -10px;}
+.d{transform: rotate(90deg); bottom: 65px;}
+.f{left:-85px;}
+.g{right: -85px;}
+.dia{ position: absolute; width: 360px; height: 15px; background: #f3f3f3; border-radius: 20px; transform: rotate(45deg);}
+.di{transform: rotate(135deg);}
+
+.in{aspect-ratio: 1; width: 10px; border-radius: 50px; position: relative; z-index: 50; background: #f3f3f3;}
+.inner{ aspect-ratio: 1; width: 60px; background: orange; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+.liner{height: 3px; width: 300px; border-radius: 30px; background: orange; position: absolute; z-index: 5;}
+.diag{position: absolute; width: 350px; height: 2px; background: orange; border-radius: 20px; transform: rotate(45deg); z-index: 3;}
+.die{position: absolute; width: 350px; height: 2px; background: orange; border-radius: 20px; transform: rotate(135deg); z-index: 3;}
+
+</style>

@@ -1,0 +1,81 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background: #6592cf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.outer{
+    aspect-ratio: 1;
+    width: 200px;
+    border-radius: 50%;
+    background: #243083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 5s;
+}
+.outer::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 90px;
+    background: inherit;
+    top: 5px;
+    left: 0;
+}
+.inner{
+    aspect-ratio: 1;
+    width: 100px;
+    border-radius: 50%;
+    background: #6592cf;
+    }
+.outer:hover{
+    background: orangered;
+}
+.up{
+    background: #6592cf;
+    height: 100px;
+    width: 50px;
+    transform: translateY(-50px);
+}
+.box{
+    aspect-ratio: 1;
+    width: 35px;
+    background-color: #243083;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 45px #dddd, 
+        0 0 0 65px #243083, 
+        0 0 0 90px #dddd,
+        0 0 0 115px #243083,
+        0 0 0 130px #dddd;
+        transition: transform 5s, background-color 5s, box-shadow 5s;
+}
+.box:hover{
+   transform: rotate(225deg);
+    background-color: #dddd;
+    box-shadow: 0 0 0 45px #243083, 
+        0 0 0 65px #dddd, 
+        0 0 0 90px #243083,
+        0 0 0 115px #6592cf,
+        0 0 0 130px #6592cf;
+}
+</style>
+<div class="outer">
+    <div class="inner">
+        <div class="up"></div>
+    </div>
+</div>
+
+<div class="box"></div>
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<div class="fork">
+    <div class="hand a"></div>
+    <div class="hand b"></div>
+    <div class="hand c"></div>
+     <div class="hand d"></div>
+  
+    <div class="hnd"></div>
+     <div class="hnd e"></div>
+     <div class="hnd f"></div>
+  </div>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background:#6592CF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .fork{
+      margin-top: 100px;
+      width: 140px;
+      height: 100px;
+      background: #060F55;
+      border-radius: 0 0 100vw 100vw;
+      position: relative;
+    }
+    .hand{
+      position: absolute;
+      width: 20px;
+      height: 120px;
+      background: inherit;
+      top: -100;
+      right: 0;
+      border-radius: 10px;
+    }
+    .b{
+      right: 40;
+    }
+    .c{
+      right: 80;
+    }
+    .d{
+      right: 120;
+    }
+    .hnd{
+      width: 20px;
+      height: 120px;
+      background: #6592CF;
+      position: absolute;
+      top: -110;
+      border-radius: 10px;
+      left: 20;
+    }
+    .e{
+      left: 60;
+    }
+    .f{
+      left: 100;
+    }
+    .fork::after{
+      content: "";
+      width: 20px;
+      height: 100px;
+      background: inherit;
+      position: absolute;
+      bottom: -90;
+      left: 60;
+      border-radius: 100vw;
+    }
+  </style>

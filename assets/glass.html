@@ -1,0 +1,51 @@
+<section>
+    <div class="cir left"></div>
+    <div class="body">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+        <div class="line four"></div>
+        <div class="line five"></div>
+        <div class="line five"></div>
+    </div>
+    <div class="cir right"></div>
+</section>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+    }
+    .body .line{
+        width: 150px;
+        height: 20px;
+        background: white;
+        margin-bottom: 10px;
+    }
+    .one{
+        margin-top: 35px;
+    }
+    .cir{
+        aspect-ratio: 1;
+        width: 240px;
+        border-radius: 50%;
+        background-color: orange;
+        position: relative;
+        z-index: 1;
+    }
+    .left{
+        left: 35px;
+    }
+    .right{
+        right: 35px;
+    }
+</style>

@@ -1,0 +1,62 @@
+<section>
+    <div class="long up"></div>
+    <div class="long down"></div>
+</section>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        width: 500px;
+        height: 120px;
+        background: brown;
+        position: relative;
+        border-radius: 20px;
+    }
+    body{
+        background-color: silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .long{
+        background-color: silver;
+        width: 400px;
+        height: 130px;
+        position: absolute;
+        border-radius: 20px;
+        position: relative;
+    }
+    .up::after, .down::before{
+        position: absolute;
+        content: "";
+        width: 500px;
+        height: 80px;
+        background-color: brown;
+    }
+    .up::after{
+        top: -80px;
+        right: -3px;
+       border-top-left-radius: 20px;
+        border-top-right-radius: 22px;
+        border-bottom-left-radius: 30px;
+    }
+    .down::before{
+        bottom: -80px;
+        left: -3px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+    }
+    .up{
+        bottom: -70px;
+        left: -150px;
+    }
+    .down{
+        top: -200px;
+        left: 250px;
+    }
+  
+</style>

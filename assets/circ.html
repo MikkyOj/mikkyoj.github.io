@@ -1,0 +1,51 @@
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #ddd;
+    }
+    .circle{
+        aspect-ratio: 1;
+        width: 200px;
+        background-color: #543de5;
+        border-radius: 50%;
+        position: relative;
+        transition: 5s;
+    }
+    .circle:hover{
+        background-color: green;
+    }
+    .line{
+        height: 10px;
+        width: 200px;
+        margin-bottom: 10px;
+        background: #ddd;
+    }
+    .one{
+        margin-top: 30%;
+        margin-bottom: 10px;
+    }
+    .up{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        transform:  rotate(90deg);
+    }
+</style>
+<div class="circle">
+    <section>
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line two"></div>
+        <div class="line two"></div>
+    </section>
+    <section class="up">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line two"></div>
+        <div class="line two"></div>
+    </section>
+   
+</div>

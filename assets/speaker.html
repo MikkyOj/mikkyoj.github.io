@@ -1,0 +1,77 @@
+<main>
+<section class="body">
+    <div class="sqr"></div>
+    <div class="tri"></div>
+</section>
+<section class="speaker">
+    <div class="circle"></div>
+</section>
+</main>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        background-color: #000;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        transform: scale(2);
+        display: flex;
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sqr{
+        aspect-ratio: 1;
+        width: 40px;
+        border-radius: 10px;
+        background-color: #243083;
+    }
+    .tri{
+        width: 0;
+        height: 0;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        border-bottom: 80px solid #243083;
+        transform: rotate(270deg);
+        margin-left: -35%;
+    }
+    .speaker{
+        width: 250px;
+        height: 200px;
+        overflow-x: hidden;
+        margin-left: -60px;
+        margin-top: -30px;
+    }
+    .circle{
+        aspect-ratio: 1;
+        width: 45px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-top: 90px;
+        margin-left: -15px;
+        box-shadow: 0 0 0 10px #243081,
+                    0 0 0 20px #000,
+                    0 0 0 30px #243083,
+                    0 0 0 43px #000, 
+                    0 0 0 51px #243085;
+        transition: 3s;
+        opacity: 0.5;
+    }
+    main:hover .circle{
+        box-shadow: 0 0 0 10px #243083,
+                    0 0 0 20px #000,
+                    0 0 0 30px #243085,
+                    0 0 0 43px #000, 
+                    0 0 0 51px #243087;
+        opacity: 1;
+                   
+    }
+</style>
