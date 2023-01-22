@@ -733,7 +733,7 @@ form .btn2 {
 
     nav ul {
         position: fixed;
-        background: #4487bd;
+        background: linear-gradient(15deg,#1c1cdd, #4487bd);
         top: 5px;
         right:
             /*-35px*/
