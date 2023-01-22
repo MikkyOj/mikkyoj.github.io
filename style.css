@@ -642,7 +642,7 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
     border: none;
-    background-color: #1c1cdd;
+    background-color: #4487bd;
     display: inline-block;
     margin-left: 0;
     transition: background-color 0.3s, transform 0.7s;
