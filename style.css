@@ -833,7 +833,14 @@ form .btn2 {
         font-size: 14px;
         line-height: 20px;
     }
-
+    /*---------- styling the services div*/
+    
+   .services-list div {
+      background: #262626;
+      padding: 25px 18px;
+      border-radius: 20px;
+      transition: background 0.3s ease-in-out;
+   }
     /*--------- styling the work images ----------*/
 
     .work img {
