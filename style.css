@@ -730,6 +730,7 @@ form .btn2 {
     }
 
     .container nav img {
+        margin-right: -15px;
         width: 100px;
         height: 70px;
     }
