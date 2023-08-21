@@ -217,7 +217,7 @@ nav ul li a::after {
     content: "";
     width: 0;
     height: 3px;
-    background: linear-gradient(35deg, #33a158, #00008b);
+    background: #00008b;
     position: absolute;
     left: 0;
     bottom: -10px;
