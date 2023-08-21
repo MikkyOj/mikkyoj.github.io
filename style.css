@@ -491,8 +491,8 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: linear-gradient(45deg, #33a158, #00008b);
-    transform: translateY(-10px);
+    background: #0b2d5f;
+    /*transform: translateY(-10px); */
 }
 
 /*--------Portfolio-----------*/
